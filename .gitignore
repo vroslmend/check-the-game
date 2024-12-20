@@ -1,0 +1,13 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+.import/
+export/
+*.import
+*.godot
+*.tmp
+*.swp
+
+# OS-specific files
+.DS_Store   # macOS
+Thumbs.db   # Windows
