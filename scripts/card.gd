@@ -1,5 +1,7 @@
 extends Sprite2D
 
+class_name Card  # Register the class globally
+
 # Enum to represent the card type (number, King, Queen, Jack)
 enum CardType { NUMBER, KING, QUEEN, JACK }
 
@@ -17,8 +19,8 @@ func set_card(card_value: int, card_suit: String, card_type: CardType):
 	self.face_up = false
 	update_card()
 
-	# Scale the card to fit better
-	self.scale = Vector2(0.5, 0.5)  # Scale down the card to 50% of its original size
+	# Scale the card to fit better (adjust as needed)
+	self.scale = Vector2(0.15, 0.15)  # Scale to 30% of the original size
 
 # Flip the card (show or hide the card face)
 func flip_card():
